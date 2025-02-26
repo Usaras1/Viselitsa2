@@ -21,7 +21,7 @@ var completeWord = [];
 // Делаем из слова _
 
 for (var i = 0; i < randomWord.length; i++){
-	completeWord[i] = "_";
+	completeWord[i] = "*";
 }
 var remainingLetter = randomWord.length;
 
@@ -46,7 +46,7 @@ while(remainingLetter > 0 && remainingTrying > 0){
 		var guess = guess.toLowerCase(); // Если буква большая - сделать ее маленькой
 		var correctGuess = false; // Для уменьшения попыток
 		for(var j = 0; j < randomWord.length; j++){
-			if(randomWord[j] === guess && completeWord[j] === "_"){
+			if(randomWord[j] === guess && completeWord[j] === "*"){
 				completeWord[j] = guess; // Замена слова
 				remainingLetter--; // если игрок ввел одну букву, и не нажал отмена - начать сверку символов
 				correctGuess = true;
