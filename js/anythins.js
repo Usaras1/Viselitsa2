@@ -21,7 +21,7 @@ var completeWord = [];
 // Делаем из слова _
 
 for (var i = 0; i < randomWord.length; i++){
-		if(randomWord[i] === " "){
+	if(randomWord[i] === " "){
 		completeWord[i] = " ";
 	} else {
 		completeWord[i] = "*";
